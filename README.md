@@ -1,1 +1,4 @@
 # PDF-Summarizer
+
+* docker
+* onnx
