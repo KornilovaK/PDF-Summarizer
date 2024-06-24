@@ -18,5 +18,5 @@ To run the web app:
 * install the nessasary libraries **pip install -r requirements.txt**
 * run with **streamlit run web.py**. It will readdress you to the welcome page
 
-## Demonstration
-![video-demonstration](my_video.mov)
+## Demonstrations
+[![Watch the video](https://raw.githubusercontent.com/username/repository/branch/path/to/thumbnail.jpg)](https://raw.githubusercontent.com/username/repository/branch/path/to/video.mp4)
