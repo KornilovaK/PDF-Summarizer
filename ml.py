@@ -48,7 +48,7 @@ class Summarizer():
         prefix = 'summary big to ' + lang[:2].lower() + ': '
         src_text = prefix + text
         input_ids = self.tokenizer(src_text, return_tensors="pt")
-        generated_tokens = model.generate(**input_ids.to(device))
+        generated_tokens = self.model.generate(**input_ids.to(device))
 
         result = self.tokenizer.batch_decode(generated_tokens, skip_special_tokens=True)[0]
         return result

@@ -28,7 +28,7 @@ if choice == "Upload and summarize pdf":
                 with open('file.pdf', 'wb') as w:
                     w.write(file.getvalue())
 
-                st.info("Please, wait a little bit :) Don't go away from this page")
+                st.info("Please, wait a little bit :) Don't leave this page")
 
                 reader = Reader('file.pdf')
                 summary, links = reader.convert(lang)
