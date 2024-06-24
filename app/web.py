@@ -4,6 +4,10 @@ import plotly.express as px
 import os 
 from pdf import Reader
 
+import logging
+logging.basicConfig(level=logging.INFO)
+
+
 with open('summary.txt', 'wb') as f:
     f = ''
 
