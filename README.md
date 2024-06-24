@@ -19,6 +19,6 @@ To run the web app:
 * run with **streamlit run web.py**. It will readdress you to the welcome page
 
 ## Demonstrations
-[![Englist to english](Video_Demonstations/En2en.mp4)](Video_Demonstations/En2en.mp4)
-[![Englist to russian](Video_Demonstations/En2en.mp4)](Video_Demonstations/En2ru.mp4)
-[![Russian to russian with images](Video_Demonstations/En2en.mp4)](Video_Demonstations/Ru2ru_with_images.mp4)
+[![Englist to english](https://youtu.be/pHHr-jYF61w)](https://youtu.be/pHHr-jYF61w)
+[![Englist to russian](https://youtu.be/hCZEtSnvJZM)](https://youtu.be/hCZEtSnvJZM)
+[![Russian to russian with images](https://youtu.be/Y4KBXAjPW2U)](https://youtu.be/Y4KBXAjPW2U)
