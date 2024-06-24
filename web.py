@@ -1,19 +1,12 @@
-from operator import index
 import streamlit as st
 import os 
 from pdf import Reader
 
-import logging
-logging.basicConfig(level=logging.INFO)
-
-
-with open('summary.txt', 'wb') as f:
-    f = ''
 
 with st.sidebar: 
     st.image("pdf-icon.png")
     st.title("Summarize PDF Lectures")
-    choice = st.radio("Navigation", ["Welcome", "Upload and summarize pdf", "Download"])
+    choice = st.radio("Navigation", ["Welcome", "Upload and summarize pdf"])
     st.info("This project application can summarize your lecture in both English and Russian")    
 
 if choice == "Welcome":
@@ -32,18 +25,18 @@ if choice == "Upload and summarize pdf":
             st.info('Only pdf')
         else:
             if st.button('Start Summarization'): 
-                with open('file.pdf', mode='wb') as w:
+                with open('file.pdf', 'wb') as w:
                     w.write(file.getvalue())
 
-                st.info("Please, wait a little bit :)")
+                st.info("Please, wait a little bit :) Don't go away from this page")
 
                 reader = Reader('file.pdf')
                 summary, links = reader.convert(lang)
+
+                st.title("Ready! Now you can download it")
+                st.info(summary)
+                st.download_button('Download Summary', summary, file_name="summary.txt")
                 
-                with open('summary.txt', 'wb') as f:
-                    f = summary
-
-
-if choice == "Download": 
-    with open('summary.txt', 'rb') as f: 
-        st.download_button('Download Summary', f, file_name="summary.txt")
+                if len(links) != 0:
+                    st.title('Provided links')
+                    st.info(*links)
