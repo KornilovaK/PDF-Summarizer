@@ -19,4 +19,6 @@ To run the web app:
 * run with **streamlit run web.py**. It will readdress you to the welcome page
 
 ## Demonstrations
-[![Watch the video](https://raw.githubusercontent.com/username/repository/branch/path/to/thumbnail.jpg)](https://raw.githubusercontent.com/username/repository/branch/path/to/video.mp4)
+[![Englist to english](Video_Demonstations/En2en.mp4)](Video_Demonstations/En2en.mp4)
+[![Englist to russian](Video_Demonstations/En2en.mp4)](Video_Demonstations/En2ru.mp4)
+[![Russian to russian with images](Video_Demonstations/En2en.mp4)](Video_Demonstations/Ru2ru_with_images.mp4)
