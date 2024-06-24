@@ -44,5 +44,5 @@ class Reader():
                         caption = self.translator.translate(caption)
                     text_page += caption
                         
-            self.text += self.summarizer.summarize(text_pages, lang)
+            self.text += self.summarizer.summary(text_page, lang)
         return [self.text, self.links]
